@@ -4,7 +4,9 @@ import copy from "esbuild-plugin-copy-watch";
 
 export const buildOptions = {
     entryPoints: [
-        './src/content-scripts/content-script.ts'
+        './src/content-scripts/content-script.ts',
+        './src/options/options.ts',
+        './src/background/background.ts',
     ],
     bundle: true,
     outdir: 'dist',
@@ -23,6 +25,14 @@ export const buildOptions = {
                     from: './src/manifest.json',
                     to: './',
                 },
+                {
+                    from: ['./src/common/**/*.css'],
+                    to: './common',
+                },
+                {
+                    from: ['./src/options/**/*.html', './src/options/**/*.css'],
+                    to: './options',
+                }
             ],
         }),
     ],

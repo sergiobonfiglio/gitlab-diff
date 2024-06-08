@@ -17,6 +17,17 @@
       ]
     }
   ],
+  "options_ui": {
+    "page": "options/options.html"
+  },
+  "background": {
+    "scripts": ["background/background.js"]
+  },
+  "permissions": [
+    "<all_urls>",
+    "storage",
+    "scripting"
+  ],
   "web_accessible_resources": [
     "icons/ext-link.svg"
   ]
