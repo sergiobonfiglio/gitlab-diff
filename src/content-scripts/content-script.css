@@ -1,0 +1,10 @@
+.jira-link > img {
+    height: 1.2rem;
+    margin: -.2rem -.2rem 0 .5rem;
+    padding-left: 1px;
+    border-radius: .25rem;
+}
+
+.jira-link > img:hover {
+    background-color: #4b4a54;
+}
