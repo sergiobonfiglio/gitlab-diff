@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "GitLab Diff",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Adds quality of life enhancements to GitLab's side-by-side view in merge requests and commits.",
   "icons": {
     "48": "icons/gitlab-qol-48.png",
