@@ -5,6 +5,7 @@
 		"clean": "rimraf dist",
 		"build": "node esbuild/build.mjs",
 		"watch": "node esbuild/watch.mjs",
+		"extract:src": "rimraf dist-src && node esbuild/publish.mjs",
 		"clean:build": "npm run clean && npm run build",
 		"dev": "npm run clean:build && concurrently -k \"npm:watch\" \"npm:web-ext:run\""
 	},
