@@ -1,7 +1,7 @@
 {
 	"scripts": {
 		"web-ext:run": "web-ext run --source-dir ./dist",
-		"web-ext:build": "rimraf web-ext-artifacts && web-ext build --source-dir ./dist",
+		"web-ext:build": "npm clean:build && rimraf web-ext-artifacts && web-ext build --source-dir ./dist",
 		"clean": "rimraf dist",
 		"build": "node esbuild/build.mjs",
 		"watch": "node esbuild/watch.mjs",
