@@ -1,6 +1,6 @@
-import {addDiffsResizeHandle} from './mrDiffResizer'
-import {addDashedLinetoFileTreeResize} from "./fileTreeHandle";
-import {tryUntilTrue} from "./utils";
+import { addDashedLinetoFileTreeResize } from "./fileTreeHandle";
+import { addDiffsResizeHandle } from "./mrDiffResizer";
+import { tryUntilTrue } from "./utils";
 
 tryUntilTrue(addDashedLinetoFileTreeResize);
 
